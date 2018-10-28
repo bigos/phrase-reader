@@ -7,3 +7,9 @@ links. That will give you the name of the publication, but you can not download
 the publication from here. You need to go to the official publications page find
 the right publication by name and there you will see the options to download rtf
 files.
+
+** Using with quicklisp
+#+BEGIN_EXAMPLE
+(push #p"~/Programming/Lisp/phrase-readerder/" asdf:*central-registry*)
+(ql:quickload :rtf-reader-eng)
+#+END_EXAMPLE

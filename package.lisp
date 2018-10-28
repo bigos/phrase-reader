@@ -1,4 +1,4 @@
 ;;;; package.lisp
 
 (defpackage #:rtf-reader-eng
-  (:use #:cl))
+  (:use #:cl #:esrap))
