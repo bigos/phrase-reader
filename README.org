@@ -1,0 +1,9 @@
+* rtf-reader-eng
+
+** finding publications by symbol
+In the library top right corner, type the publication symbol.
+If you type something you will see lookup page with the publication and chapter
+links. That will give you the name of the publication, but you can not download
+the publication from here. You need to go to the official publications page find
+the right publication by name and there you will see the options to download rtf
+files.
