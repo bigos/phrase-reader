@@ -6,7 +6,7 @@
 
 (defun all-files () (cl-fad:list-directory #p "/tmp/eng/"))
 
-(defparameter rtf-file (elt (all-files) 1))
+(defparameter rtf-file (elt (all-files) 7))
 
 (defun read-doc (file)
   (with-open-file (s file)
@@ -23,7 +23,7 @@
 
 (defun words-in-file (file)
   (format t "~&reading file ~A~%" file)
-  (alexandria::flatten (parse 'sexp (read-doc file))))
+  (parse 'sexp (read-doc file)))
 
 ;;; ----------------------------------------------------------------
 
@@ -66,7 +66,7 @@
     (declare (ignore p1 p2 w))
     (cons car cdr)))
 
-(defrule atom (or  integer symbol utfstr  #\\ #\* #\; #\? #\' #\.
+(defrule atom (or  integer utfstr symbol  #\\ #\* #\; #\? #\' #\.
                   #\( #\) #\: #\, #\! #\- #\[ #\] #\/
                   #\> #\< #\| ))
 
